@@ -149,7 +149,7 @@ The pipeline joins all tables into a single master order-level dataset before an
 ## Chart Insights
 
 ### Revenue & Order Volume Trends (2017-2018)
-![Revenue Trends](olist-ecommerce-analytics/outputs/charts/1_revenue_trends.png)
+![Revenue Trends](outputs/charts/1_revenue_trends.png)
 
 **What this shows:** Monthly revenue and order volume plotted side by side for 2017 vs 2018, showing the full growth trajectory of the business over two years.
 
@@ -158,7 +158,7 @@ The pipeline joins all tables into a single master order-level dataset before an
 ---
 
 ### Product Category Performance
-![Category Analysis](olist-ecommerce-analytics/outputs/charts/2_category_analysis.png)
+![Category Analysis](outputs/charts/2_category_analysis.png)
 
 **What this shows:** The top 10 product categories ranked by total revenue (left) and average item price (right).
 
@@ -167,7 +167,7 @@ The pipeline joins all tables into a single master order-level dataset before an
 ---
 
 ### Payment Behavior Analysis
-![Payment Analysis](olist-ecommerce-analytics/outputs/charts/3_payment_analysis.png)
+![Payment Analysis](outputs/charts/3_payment_analysis.png)
 
 **What this shows:** Order volume and average order value broken down by payment type -- credit card, boleto (Brazilian bank slip), voucher, and debit card.
 
@@ -176,7 +176,7 @@ The pipeline joins all tables into a single master order-level dataset before an
 ---
 
 ### Customer Satisfaction & Delivery Performance
-![Satisfaction and Delivery](olist-ecommerce-analytics/outputs/charts/4_satisfaction_delivery.png)
+![Satisfaction and Delivery](outputs/charts/4_satisfaction_delivery.png)
 
 **What this shows:** Left -- distribution of review scores from 1 to 5 across all delivered orders. Right -- the top 10 Brazilian states by average delivery time in days.
 
@@ -185,7 +185,7 @@ The pipeline joins all tables into a single master order-level dataset before an
 ---
 
 ### Revenue and Customer Satisfaction by State
-![Revenue by State](olist-ecommerce-analytics/outputs/charts/5_revenue_by_state.png)
+![Revenue by State](outputs/charts/5_revenue_by_state.png)
 
 **What this shows:** Total revenue per Brazilian state (bars) overlaid with average review score (line) for the top 12 states by revenue.
 
@@ -194,7 +194,7 @@ The pipeline joins all tables into a single master order-level dataset before an
 ---
 
 ### Order Timing Patterns
-![Order Timing](olist-ecommerce-analytics/outputs/charts/6_order_timing.png)
+![Order Timing](outputs/charts/6_order_timing.png)
 
 **What this shows:** Order volume by hour of day (left) and day of week (right).
 
