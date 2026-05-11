@@ -13,7 +13,7 @@ An end-to-end analytics pipeline built on the **Brazilian E-Commerce Public Data
 
 ## Why This Project Matters
 
-The same analytical patterns used here are used daily at companies like Capital One, Visa, Amazon, and JPMorgan to understand customer lifetime value, operational risk, and product performance. This project shows:
+This project shows:
 
 - Ability to work with **multi-table relational data** (not just flat CSVs)
 - **SQL joins and aggregations** across 9 normalized tables
@@ -151,8 +151,7 @@ The pipeline joins all tables into a single master order-level dataset before an
 - Monthly revenue and order volume plotted side by side for 2017 vs 2018
 - Revenue grew significantly year over year across almost every month
 - November shows a clear spike in both years driven by Black Friday
-- The 2018 line consistently sits above 2017, confirming strong YoY growth
-- This trend analysis is what business analysts at e-commerce and fintech companies run monthly to track platform health and forecast demand
+- The 2018 line consistently sits above 2017, confirming strong and sustained platform growth
 
 ---
 
@@ -161,9 +160,8 @@ The pipeline joins all tables into a single master order-level dataset before an
 
 - Top 10 categories ranked by total revenue (left) and average item price (right)
 - Health & Beauty leads in total revenue, followed by Watches & Gifts and Bed/Bath/Table
-- The avg price chart tells a different story - computers and furniture have high prices but lower order volumes, meaning fewer but higher-value transactions
-- This split matters for pricing strategy, inventory planning, and marketing spend allocation
-- A data analyst at Amazon or Walmart would use this breakdown to identify which categories to invest in
+- The avg price chart reveals a different pattern -- computers and furniture have high prices but lower order volumes, meaning fewer but higher-value transactions
+- High revenue does not always mean high price per item, and high price does not always mean high total revenue
 
 ---
 
@@ -172,9 +170,9 @@ The pipeline joins all tables into a single master order-level dataset before an
 
 - Order volume and average order value broken down by payment type
 - Credit card dominates with 76,132 orders
-- Boleto (a Brazilian bank slip where customers pay at a bank or ATM) is the second most common, reflecting that a significant portion of Brazil's population is unbanked or underbanked
-- Voucher orders have the lowest average order value, suggesting promotional use
-- Payment behavior analysis is directly relevant to roles at Visa, Capital One, and payment processing companies
+- Boleto (a Brazilian bank slip where customers pay at a bank or ATM) is the second most common, unique to the Brazilian market
+- Voucher orders have the lowest average order value, suggesting they are used for smaller promotional purchases
+- Debit card usage is minimal compared to credit, indicating customers prefer installment-based credit purchasing
 
 ---
 
@@ -184,9 +182,9 @@ The pipeline joins all tables into a single master order-level dataset before an
 - Left: distribution of review scores from 1 to 5 across all delivered orders
 - Right: top 10 Brazilian states by average delivery time in days
 - 59.2% of orders receive a 5-star review with an overall average of 4.16/5.0
-- The 1-star bucket is the second largest category, suggesting a bimodal distribution where customers either love or hate the experience
-- States further from Sao Paulo's distribution infrastructure experience significantly longer delivery times, which directly correlates with lower review scores
-- This is an operational SLA problem with a clear geographic root cause
+- The 1-star bucket is the second largest category, suggesting customers either love or hate the experience with little middle ground
+- States further from Sao Paulo's distribution infrastructure experience significantly longer delivery times
+- Longer delivery times correlate directly with lower review scores, confirming delivery speed as a key satisfaction driver
 
 ---
 
@@ -194,10 +192,10 @@ The pipeline joins all tables into a single master order-level dataset before an
 ![Revenue by State](outputs/charts/5_revenue_by_state.png)
 
 - Total revenue per Brazilian state (bars) overlaid with average review score (line) for the top 12 states
-- Sao Paulo (SP) generates $5.77M, nearly 3x more than Rio de Janeiro (RJ) which is second
-- The steep revenue dropoff reflects Brazil's significant economic concentration in SP
-- RJ has one of the lowest satisfaction scores despite being the second highest revenue state, suggesting operational issues worth investigating
-- A data analyst would use this dual-axis view to prioritize which markets need operational investment vs which are performing well on both dimensions
+- Sao Paulo (SP) generates $5.77M, nearly 3x more than Rio de Janeiro (RJ) in second place
+- The steep revenue dropoff shows how concentrated demand is in SP
+- RJ has one of the lowest satisfaction scores despite being the second highest revenue state, pointing to a fulfillment or delivery quality issue in that market
+- High revenue and high satisfaction do not always go together -- this chart makes that gap visible
 
 ---
 
@@ -206,9 +204,9 @@ The pipeline joins all tables into a single master order-level dataset before an
 
 - Order volume by hour of day (left) and day of week (right)
 - Orders peak in the early afternoon between 1pm and 4pm
-- Monday is the highest volume day, likely reflecting customers who browse over the weekend and purchase on Monday
-- Weekdays significantly outperform weekends
-- This timing data is directly actionable for scheduling email campaigns, push notifications, and paid ads around peak ordering windows
+- Monday is the highest volume day, suggesting customers browse over the weekend and convert on Monday
+- Weekdays significantly outperform weekends across all days
+- The hourly pattern is consistent, indicating predictable demand windows throughout the day
 
 ---
 
@@ -224,10 +222,9 @@ Customers are segmented by total lifetime spend into four tiers:
 | VIP | $1,000+ | Highest lifetime value, retention priority |
 
 **Why this matters:**
-- Customer segmentation by lifetime value is a foundational technique in CRM, retention marketing, and product strategy
-- Companies like Capital One use spend-based segmentation to personalize credit offers
-- Amazon uses it to prioritize Prime benefits
-- Understanding which customers are in which tier and what drives movement between tiers is directly relevant to data analyst and business analyst roles at any consumer-facing company
+- Customer segmentation by lifetime value is a foundational technique in CRM and retention strategy
+- Understanding which customers are in which tier and what drives movement between tiers helps identify where to focus retention efforts
+- Budget customers represent volume, VIP customers represent disproportionate revenue -- treating them the same way is a missed opportunity
 
 ---
 
